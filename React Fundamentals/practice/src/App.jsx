@@ -1,3 +1,4 @@
+/* eslint-disable import/no-cycle */
 /* eslint-disable react/button-has-type */
 import React, { useState } from 'react';
 import Counter from './Counter';

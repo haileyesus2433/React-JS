@@ -1,0 +1,22 @@
+.btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+.btn--primary{
+    background-color: hsl(200, 100%, 50%);
+}
+.btn--primary:hover{
+    background-color: hsl(200, 100%, 40%);
+}
+
+.btn--danger{
+    background-color: hsl(0, 100%, 50%);
+}
+.btn--danger:hover{
+    background-color: hsl(0, 100%, 40%);
+}

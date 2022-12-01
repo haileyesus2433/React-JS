@@ -1,0 +1,23 @@
+@import 'recipe-list.css';
+@import "buttons.css";
+@import "recipe.css";
+@import "ingredient-list.css";
+@import "recipe-edit.css";
+
+
+*,*::after,*::before{
+    box-sizing:border-box;
+}
+
+html{
+    font-size: 20px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.mr-1{
+    margin-right: 10px;
+}
