@@ -101,6 +101,11 @@ const App = () => {
     newRecipes[index] = recipe;
     setRecipes(newRecipes);
   };
+  const handleSearch = (query) => {
+    if (query) {
+      setRecipes(recipes.filter((recipe) => recipe.name.includes(query)));
+    }
+  };
   const recipeContextValue = {
     handleAddRecipe,
     handleDeleteRecipe,
@@ -110,7 +115,7 @@ const App = () => {
 
   return (
     <RecipeContext.Provider value={recipeContextValue}>
-      <RecipeList recipes={recipes} />
+      <RecipeList recipes={recipes} handleSearch={handleSearch} />
       {selectedRecipe && <RecipeEdit recipe={selectedRecipe} />}
     </RecipeContext.Provider>
   );
